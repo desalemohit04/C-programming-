@@ -1,18 +1,20 @@
+//Swap two numbers using functions
 #include <stdio.h>
+int swap(int a,int b)
+{
+    int temp;
+    temp=a;
+    a=b;
+    b=temp;
+
+    printf("The value of a after swapping is %d\n",a);
+    printf("The value of b after swapping is %d",b);
+}
 void main()
 {
-    int age;
-    printf("Enter the age ");
-    scanf("%d",&age);
-    
-    if(age >= 18){
-        printf("adult \n");
-    }
-    else if(age >13 && age < 18){
-        printf("teenager \n");
-    }
-    else{
-        printf("child \n");
-    }
+    int a,b;
+    printf("Enter the value of a and b");
+    scanf("%d%d",&a,&b);
+
+    swap(a,b);
 }
-/*using elseif*/
